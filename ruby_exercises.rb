@@ -12,12 +12,12 @@ a.unshift 0
 # remove 11 and append 3 
 a.pop
 a << 3
-# only unique elements of array but without modifying no bash
+# only unique elements of array but without modifying no bang, bang is exclamation mark and actually modifies the array
 puts a.uniq
 # hash in newer syntax
 h = {a:1, b:2, c:3, d:4}
 # hash in 1.8 syntax
-h_1_8 = {"a" => 1, "b" => 2, "c" => 3, "d" => 4}
+h_1_8 = {:a => 1, :b => 2, :c => 3, :d => 4}
 # get value of b key, newer syntax creates key as symbol, need to use colon to reference
 puts h.select {|k,v| k == :b}
 # add e/5 key value to hash
